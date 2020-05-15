@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+    <title>Circular Audio Player</title>
+    <link rel="stylesheet" href="progres-bar.css">
+</head>
+<body>
+<div class="container">
+<!-- Media Player-->
+<div class="mediPlayer">
+    <audio class="listen" preload="none" data-size="250" src="sounds/piano.mp3"></audio>
+</div>
+</div>
+<!-- Media Player / -->
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="player.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.mediPlayer').mediaPlayer();
+    });
+</script>
+</body>
+</html>
